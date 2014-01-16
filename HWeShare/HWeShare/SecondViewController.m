@@ -44,15 +44,15 @@
     [[CuzyAdSDK sharedAdSDK] setTestingURL];
     [[CuzyAdSDK sharedAdSDK] registerAppWithAppKey:@"200056" 	andAppSecret:@"051a9e4652fc5b881dfc6ba74d3cd633"];
     
+
+    }
+
+-(void)viewWillAppear:(BOOL)animated{
+
+      [[CuzyAdSDK sharedAdSDK] fetchAppItemWithThemeID:@"" orSearchKeywords:@"iphone" withPageIndex:0];
+
+    
 }
 
--(void)viewDidAppear:(BOOL)animated{
-
-    [[CuzyAdSDK sharedAdSDK] fetchAppItemWithThemeID:@"2" orSearchKeywords:@"" withPageIndex:0];
-}
-
-- (IBAction)showLayout1:(id)sender {
-    [[CuzyAdSDK sharedAdSDK] fetchAppItemWithThemeID:@"" orSearchKeywords:@"iphone" withPageIndex:0];
-}
 
 @end

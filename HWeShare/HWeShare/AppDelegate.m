@@ -13,7 +13,7 @@
 #import "ThirdViewController.h"
 #import "FourthViewController.h"
 #import "SearchVC.h"
-
+#import "HotVC.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -35,7 +35,7 @@
     nav.navigationBar.tintColor= [UIColor darkGrayColor];
     [_tabBarController setViewControllers:[NSMutableArray arrayWithObjects:
                                                 nav,
-                                           [[SecondViewController alloc] init],[[ThirdViewController alloc] init],[[FourthViewController alloc] init],nil]];
+                                           [[SecondViewController alloc] init],[[ThirdViewController alloc] init],[[FourthViewController alloc] init],[[HotVC alloc] init],nil]];
     // Tab background Image
     [_tabBarController setBackgroundImageName:@"noise-dark-gray.png"];
     [_tabBarController setSelectedBackgroundImageName:@"noise-dark-blue.png"];
@@ -46,99 +46,99 @@
     return YES;
 }
 
--(void)setupTabBarController
-{
-    CRTabBarController *tabBarController = [[CRTabBarController alloc] init];
-    //视图数组
-    
-    
-    
-    NSMutableArray* viewControllers = [[NSMutableArray alloc] init];
-    
-    UIViewController *crCategoriesslidingViewController = [[UIViewController alloc] init];
-    //导航控制器
-    UINavigationController *categoriesNavigationController = [[UINavigationController alloc] initWithRootViewController:crCategoriesslidingViewController];
-    
-    //首页
-    UITabBarItem* tabBarItem = [[UITabBarItem alloc] init];
-    [tabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_home_ON"]
-              withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_home"]];
-    categoriesNavigationController.view.backgroundColor = [UIColor lightGrayColor];
-    [categoriesNavigationController setTabBarItem: tabBarItem];
-    [viewControllers addObject:categoriesNavigationController];
-    
-    
-    //收藏
-    UIViewController *crSavedProductsController = [[UIViewController alloc] init];
-    UINavigationController *savedNavigationController = [[UINavigationController alloc] initWithRootViewController:crSavedProductsController];
-    UITabBarItem* savedTabBarItem = [[UITabBarItem alloc] init];
-    [savedTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_saved_ON"]
-                   withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_saved"]];
-    crSavedProductsController.view.backgroundColor = [UIColor purpleColor];
-    [savedNavigationController setTabBarItem: savedTabBarItem];
-    [viewControllers addObject:savedNavigationController];
-    
-    
-    
-    GoodsViewController *crSearchController = [[GoodsViewController alloc] init ];
-    UINavigationController *searchNavigationController = [[UINavigationController alloc] initWithRootViewController:crSearchController];
-    UITabBarItem* searchTabBarItem = [[UITabBarItem alloc] init];
-    [searchTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_tab_search_ON"]
-                    withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_tab_search"]];
-//    crSearchController.view.backgroundColor = [UIColor brownColor];
-    [searchNavigationController setTabBarItem: searchTabBarItem];
-    [viewControllers addObject:searchNavigationController];
-    
-    
-    
-    UIViewController *crRecentProductsController = [[UIViewController alloc] init ];
-    UINavigationController *recentNavigationProductsController = [[UINavigationController alloc] initWithRootViewController:crRecentProductsController];
-    UITabBarItem* recentTabBarItem = [[UITabBarItem alloc] init];
-    [recentTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_recent_ON"]
-                    withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_recent"]];
-    crRecentProductsController.view.backgroundColor = [UIColor redColor];
-    [recentNavigationProductsController setTabBarItem: recentTabBarItem];
-    [viewControllers addObject:recentNavigationProductsController];
-    
-    UIViewController *crAccountsController = [[UIViewController alloc] init ];
-    UINavigationController *accountsNavigationController = [[UINavigationController alloc] initWithRootViewController:crAccountsController];
-    UITabBarItem* accountTabBarItem = [[UITabBarItem alloc] init];
-    [accountTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_account_ON"]
-                     withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_account"]];
-    crAccountsController.view.backgroundColor = [UIColor yellowColor];
-    [accountsNavigationController setTabBarItem: accountTabBarItem];
-    [viewControllers addObject:accountsNavigationController];
-    
-    UIViewController *crBrandsViewController = [[UIViewController alloc] init ];
-    UINavigationController *brandsNavigationController = [[UINavigationController alloc] initWithRootViewController:crBrandsViewController];
-    UITabBarItem *brandsTabBarItem = [[UITabBarItem alloc] init];
-    [brandsTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_brand_ON"]
-                    withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_brand"]];
-    crBrandsViewController.view.backgroundColor = [UIColor whiteColor];
-    [brandsNavigationController setTabBarItem: brandsTabBarItem];
-    [viewControllers addObject:brandsNavigationController];
-    
-    
-    UIViewController *crAboutController = [[UIViewController alloc] init ];
-    UINavigationController *aboutNavigationController = [[UINavigationController alloc] initWithRootViewController:crAboutController];
-    UITabBarItem* aboutTabBarItem = [[UITabBarItem alloc] init];
-    [aboutTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_tab_info_ON"]
-                   withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_tab_info"]];
-    crAboutController.view.backgroundColor = [UIColor greenColor];
-    [aboutNavigationController setTabBarItem: aboutTabBarItem];
-    [viewControllers addObject:aboutNavigationController];
-    
-	tabBarController.delegate = self;
-	tabBarController.viewControllers = viewControllers;
-    
-    
-    [self.window addSubview:[tabBarController view]];
-    self.window.rootViewController = tabBarController;
-    
-    
-    
-    
-}
+//-(void)setupTabBarController
+//{
+//    CRTabBarController *tabBarController = [[CRTabBarController alloc] init];
+//    //视图数组
+//    
+//    
+//    
+//    NSMutableArray* viewControllers = [[NSMutableArray alloc] init];
+//    
+//    UIViewController *crCategoriesslidingViewController = [[UIViewController alloc] init];
+//    //导航控制器
+//    UINavigationController *categoriesNavigationController = [[UINavigationController alloc] initWithRootViewController:crCategoriesslidingViewController];
+//    
+//    //首页
+//    UITabBarItem* tabBarItem = [[UITabBarItem alloc] init];
+//    [tabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_home_ON"]
+//              withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_home"]];
+//    categoriesNavigationController.view.backgroundColor = [UIColor lightGrayColor];
+//    [categoriesNavigationController setTabBarItem: tabBarItem];
+//    [viewControllers addObject:categoriesNavigationController];
+//    
+//    
+//    //收藏
+//    UIViewController *crSavedProductsController = [[UIViewController alloc] init];
+//    UINavigationController *savedNavigationController = [[UINavigationController alloc] initWithRootViewController:crSavedProductsController];
+//    UITabBarItem* savedTabBarItem = [[UITabBarItem alloc] init];
+//    [savedTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_saved_ON"]
+//                   withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_saved"]];
+//    crSavedProductsController.view.backgroundColor = [UIColor purpleColor];
+//    [savedNavigationController setTabBarItem: savedTabBarItem];
+//    [viewControllers addObject:savedNavigationController];
+//    
+//    
+//    
+//    GoodsViewController *crSearchController = [[GoodsViewController alloc] init ];
+//    UINavigationController *searchNavigationController = [[UINavigationController alloc] initWithRootViewController:crSearchController];
+//    UITabBarItem* searchTabBarItem = [[UITabBarItem alloc] init];
+//    [searchTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_tab_search_ON"]
+//                    withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_tab_search"]];
+////    crSearchController.view.backgroundColor = [UIColor brownColor];
+//    [searchNavigationController setTabBarItem: searchTabBarItem];
+//    [viewControllers addObject:searchNavigationController];
+//    
+//    
+//    
+//    UIViewController *crRecentProductsController = [[UIViewController alloc] init ];
+//    UINavigationController *recentNavigationProductsController = [[UINavigationController alloc] initWithRootViewController:crRecentProductsController];
+//    UITabBarItem* recentTabBarItem = [[UITabBarItem alloc] init];
+//    [recentTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_recent_ON"]
+//                    withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_recent"]];
+//    crRecentProductsController.view.backgroundColor = [UIColor redColor];
+//    [recentNavigationProductsController setTabBarItem: recentTabBarItem];
+//    [viewControllers addObject:recentNavigationProductsController];
+//    
+//    UIViewController *crAccountsController = [[UIViewController alloc] init ];
+//    UINavigationController *accountsNavigationController = [[UINavigationController alloc] initWithRootViewController:crAccountsController];
+//    UITabBarItem* accountTabBarItem = [[UITabBarItem alloc] init];
+//    [accountTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_account_ON"]
+//                     withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_account"]];
+//    crAccountsController.view.backgroundColor = [UIColor yellowColor];
+//    [accountsNavigationController setTabBarItem: accountTabBarItem];
+//    [viewControllers addObject:accountsNavigationController];
+//    
+//    UIViewController *crBrandsViewController = [[UIViewController alloc] init ];
+//    UINavigationController *brandsNavigationController = [[UINavigationController alloc] initWithRootViewController:crBrandsViewController];
+//    UITabBarItem *brandsTabBarItem = [[UITabBarItem alloc] init];
+//    [brandsTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_brand_ON"]
+//                    withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_brand"]];
+//    crBrandsViewController.view.backgroundColor = [UIColor whiteColor];
+//    [brandsNavigationController setTabBarItem: brandsTabBarItem];
+//    [viewControllers addObject:brandsNavigationController];
+//    
+//    
+//    UIViewController *crAboutController = [[UIViewController alloc] init ];
+//    UINavigationController *aboutNavigationController = [[UINavigationController alloc] initWithRootViewController:crAboutController];
+//    UITabBarItem* aboutTabBarItem = [[UITabBarItem alloc] init];
+//    [aboutTabBarItem  setFinishedSelectedImage: [UIImage imageNamed: @"ICN_tab_info_ON"]
+//                   withFinishedUnselectedImage: [UIImage imageNamed: @"ICN_tab_info"]];
+//    crAboutController.view.backgroundColor = [UIColor greenColor];
+//    [aboutNavigationController setTabBarItem: aboutTabBarItem];
+//    [viewControllers addObject:aboutNavigationController];
+//    
+//	tabBarController.delegate = self;
+//	tabBarController.viewControllers = viewControllers;
+//    
+//    
+//    [self.window addSubview:[tabBarController view]];
+//    self.window.rootViewController = tabBarController;
+//    
+//    
+//    
+//    
+//}
 
 
 

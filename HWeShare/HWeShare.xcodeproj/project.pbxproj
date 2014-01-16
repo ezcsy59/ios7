@@ -129,9 +129,11 @@
 		04A8663518697E9000C3194E /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8662F18697E9000C3194E /* MJRefreshBaseView.m */; };
 		04A8663618697E9000C3194E /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8663118697E9000C3194E /* MJRefreshFooterView.m */; };
 		04A8663718697E9000C3194E /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8663318697E9000C3194E /* MJRefreshHeaderView.m */; };
-		04A8663E1869820C00C3194E /* GoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8663C1869820C00C3194E /* GoodsViewController.m */; };
-		04A8663F1869820C00C3194E /* GoodsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A8663D1869820C00C3194E /* GoodsViewController.xib */; };
 		04AB983E1869275100178CEB /* CRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB983C1869233700178CEB /* CRTabBarController.m */; };
+		04AC5F2F188768A200F96CCA /* HotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC5F2D188768A200F96CCA /* HotVC.m */; };
+		04AC5F30188768A200F96CCA /* HotVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AC5F2E188768A200F96CCA /* HotVC.xib */; };
+		04AC5F3318878B1300F96CCA /* OneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC5F3218878B1300F96CCA /* OneCell.m */; };
+		04AC5F3518878C1C00F96CCA /* OneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AC5F3418878C1C00F96CCA /* OneCell.xib */; };
 		04F83BAE1885282200631306 /* CuzyAdSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04F83BAB1885282200631306 /* CuzyAdSDKResource.bundle */; };
 		04F83BAF1885282200631306 /* libCuzyAdSDK_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F83BAC1885282200631306 /* libCuzyAdSDK_universal.a */; };
 		04F83BB01885282200631306 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04F83BAD1885282200631306 /* readme.txt */; };
@@ -318,11 +320,14 @@
 		04A8663118697E9000C3194E /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooterView.m; path = "快速集成下拉刷新/MJRefresh/MJRefreshFooterView.m"; sourceTree = SOURCE_ROOT; };
 		04A8663218697E9000C3194E /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeaderView.h; path = "快速集成下拉刷新/MJRefresh/MJRefreshHeaderView.h"; sourceTree = SOURCE_ROOT; };
 		04A8663318697E9000C3194E /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeaderView.m; path = "快速集成下拉刷新/MJRefresh/MJRefreshHeaderView.m"; sourceTree = SOURCE_ROOT; };
-		04A8663B1869820C00C3194E /* GoodsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsViewController.h; sourceTree = "<group>"; };
-		04A8663C1869820C00C3194E /* GoodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsViewController.m; sourceTree = "<group>"; };
-		04A8663D1869820C00C3194E /* GoodsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodsViewController.xib; sourceTree = "<group>"; };
 		04AB983B1869233700178CEB /* CRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRTabBarController.h; path = CRTabBar/CRTabBarController.h; sourceTree = SOURCE_ROOT; };
 		04AB983C1869233700178CEB /* CRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRTabBarController.m; path = CRTabBar/CRTabBarController.m; sourceTree = SOURCE_ROOT; };
+		04AC5F2C188768A200F96CCA /* HotVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotVC.h; sourceTree = "<group>"; };
+		04AC5F2D188768A200F96CCA /* HotVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotVC.m; sourceTree = "<group>"; };
+		04AC5F2E188768A200F96CCA /* HotVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotVC.xib; sourceTree = "<group>"; };
+		04AC5F3118878B1300F96CCA /* OneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneCell.h; sourceTree = "<group>"; };
+		04AC5F3218878B1300F96CCA /* OneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneCell.m; sourceTree = "<group>"; };
+		04AC5F3418878C1C00F96CCA /* OneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneCell.xib; sourceTree = "<group>"; };
 		04F83BA91885282200631306 /* CuzyAdBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuzyAdBarView.h; sourceTree = "<group>"; };
 		04F83BAA1885282200631306 /* CuzyAdSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuzyAdSDK.h; sourceTree = "<group>"; };
 		04F83BAB1885282200631306 /* CuzyAdSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CuzyAdSDKResource.bundle; sourceTree = "<group>"; };
@@ -511,9 +516,6 @@
 				046D837A187966CE0094F214 /* TestViewController.xib */,
 				049268F8187A410000383E0C /* UIViewController+AKTabBarController.h */,
 				049268F9187A410000383E0C /* UIViewController+AKTabBarController.m */,
-				04A8663B1869820C00C3194E /* GoodsViewController.h */,
-				04A8663C1869820C00C3194E /* GoodsViewController.m */,
-				04A8663D1869820C00C3194E /* GoodsViewController.xib */,
 				0498F823187A875000AF452A /* FirstViewController.h */,
 				0498F824187A875000AF452A /* FirstViewController.m */,
 				0498F825187A875000AF452A /* SecondViewController.h */,
@@ -533,6 +535,12 @@
 				049D62E6187D41D800729266 /* WebVC.h */,
 				049D62E7187D41DA00729266 /* WebVC.m */,
 				049D62E8187D41DB00729266 /* WebVC.xib */,
+				04AC5F2C188768A200F96CCA /* HotVC.h */,
+				04AC5F2D188768A200F96CCA /* HotVC.m */,
+				04AC5F2E188768A200F96CCA /* HotVC.xib */,
+				04AC5F3118878B1300F96CCA /* OneCell.h */,
+				04AC5F3218878B1300F96CCA /* OneCell.m */,
+				04AC5F3418878C1C00F96CCA /* OneCell.xib */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -756,6 +764,7 @@
 				04A865EF1869353000C3194E /* image-3@2x.png in Resources */,
 				04A865F01869353000C3194E /* image-4.png in Resources */,
 				04A865F11869353000C3194E /* image-4@2x.png in Resources */,
+				04AC5F3518878C1C00F96CCA /* OneCell.xib in Resources */,
 				04A865F21869353000C3194E /* noise-dark-blue.png in Resources */,
 				04A865F31869353000C3194E /* noise-dark-blue@2x.png in Resources */,
 				04A865F41869353000C3194E /* noise-dark-gray.png in Resources */,
@@ -768,6 +777,7 @@
 				04A865B61869336100C3194E /* ICN_account_ON@2x.png in Resources */,
 				04A865B71869336100C3194E /* ICN_account.png in Resources */,
 				04A865B81869336100C3194E /* ICN_account@2x.png in Resources */,
+				04AC5F30188768A200F96CCA /* HotVC.xib in Resources */,
 				04A865B91869336100C3194E /* ICN_brand_ON.png in Resources */,
 				04A865BA1869336100C3194E /* ICN_brand_ON@2x.png in Resources */,
 				04A865BB1869336100C3194E /* ICN_brand.png in Resources */,
@@ -803,7 +813,6 @@
 				0458922B18691D3700FC2B10 /* Default@2x.png in Resources */,
 				0458922D18691D3700FC2B10 /* Default-568h@2x.png in Resources */,
 				04A8663418697E9000C3194E /* MJRefresh.bundle in Resources */,
-				04A8663F1869820C00C3194E /* GoodsViewController.xib in Resources */,
 				046D836E187962DA0094F214 /* AKTabBarController.bundle in Resources */,
 				046D837C187966CE0094F214 /* CustomCell.xib in Resources */,
 				046D837E187966CE0094F214 /* TestViewController.xib in Resources */,
@@ -855,7 +864,6 @@
 				04A8663518697E9000C3194E /* MJRefreshBaseView.m in Sources */,
 				04A8663618697E9000C3194E /* MJRefreshFooterView.m in Sources */,
 				04A8663718697E9000C3194E /* MJRefreshHeaderView.m in Sources */,
-				04A8663E1869820C00C3194E /* GoodsViewController.m in Sources */,
 				0498AFE8186AC3BD00090B73 /* TimeTools.m in Sources */,
 				046D836C187962DA0094F214 /* AKTab.m in Sources */,
 				046D836D187962DA0094F214 /* AKTabBar.m in Sources */,
@@ -863,6 +871,7 @@
 				046D8370187962DA0094F214 /* AKTabBarView.m in Sources */,
 				046D8371187962DA0094F214 /* UINavigationController+AKTabBarController.m in Sources */,
 				046D8372187962DA0094F214 /* UIViewController+AKTabBarController.m in Sources */,
+				04AC5F3318878B1300F96CCA /* OneCell.m in Sources */,
 				046D837B187966CE0094F214 /* CustomCell.m in Sources */,
 				046D837D187966CE0094F214 /* TestViewController.m in Sources */,
 				046D83B3187967390094F214 /* CustomObject.m in Sources */,
@@ -883,6 +892,7 @@
 				046D86C018796FB20094F214 /* NSMutableDictionaryTaobao.m in Sources */,
 				049268FA187A410000383E0C /* UIViewController+AKTabBarController.m in Sources */,
 				0498F82D187A875100AF452A /* FirstViewController.m in Sources */,
+				04AC5F2F188768A200F96CCA /* HotVC.m in Sources */,
 				0498F82E187A875100AF452A /* SecondViewController.m in Sources */,
 				0498F82F187A875100AF452A /* ThirdViewController.m in Sources */,
 				0498F830187A875100AF452A /* FourthViewController.m in Sources */,
@@ -985,6 +995,7 @@
 				OTHER_LDFLAGS = (
 					"-fobjc",
 					"-arc",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1010,6 +1021,7 @@
 				OTHER_LDFLAGS = (
 					"-fobjc",
 					"-arc",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

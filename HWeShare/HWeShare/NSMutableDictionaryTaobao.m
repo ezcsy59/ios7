@@ -222,7 +222,7 @@ static NSString* const app_secret_key = @"7a8c5138e845ee975cb17f8a896c6b79";
 //    }
 //    return orgin;
 //}
-	   // http://gw.api.tbsandbox.com/router/rest?app_key=test&codeType=JAVA&fields=num_iid,title,nick,pic_url,cid,price,type,delist_time,post_fee,score,volume&format=json&method=taobao.items.search&page_no=1&page_size=40&q=羽绒服&sign=65FA41EC8A3568BD99FABA2CA7C55C00&timestamp=2011-01-19 16:19:01&v=2.0
+
 
 - (void)testDefault
 {
@@ -241,6 +241,23 @@ static NSString* const app_secret_key = @"7a8c5138e845ee975cb17f8a896c6b79";
 	[df setDateFormat:@"YYYY-MM-dd HH:mm:SS"];
 	[self setObject:[df stringFromDate:date] forKey:@"timestamp"];
 
+}
+
+-(void)hotDefault
+{
+    
+	[self setObject:app_key forKey:@"app_key"];
+	[self setObject:@"title,click_url" forKey:@"fields"];
+	[self setObject:@"json" forKey:@"format"];
+	[self setObject:@"59miao.promos.list.get" forKey:@"method"];
+	[self setObject:@"1.1" forKey:@"v"];
+    [self setObject:@"20" forKey:@"page_size"];
+    [self setObject:@"1" forKey:@"page_no"];
+	 NSDate *date = [NSDate date];
+	 NSDateFormatter *df = [[NSDateFormatter alloc] init];
+	[df setDateFormat:@"YYYY-MM-dd HH:mm:SS"];
+	[self setObject:[df stringFromDate:date] forKey:@"timestamp"];
+    
 }
 
 @end

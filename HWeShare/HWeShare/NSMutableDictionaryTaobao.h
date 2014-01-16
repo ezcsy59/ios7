@@ -13,4 +13,5 @@
 
 - (NSString*)urlString;
 - (void)testDefault;
+-(void)hotDefault;
 @end
