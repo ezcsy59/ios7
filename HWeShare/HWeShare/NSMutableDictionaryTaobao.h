@@ -14,4 +14,5 @@
 - (NSString*)urlString;
 - (void)testDefault;
 -(void)hotDefault;
+-(void)picDefault;
 @end

@@ -260,4 +260,21 @@ static NSString* const app_secret_key = @"7a8c5138e845ee975cb17f8a896c6b79";
     
 }
 
+-(void)picDefault
+{
+    [self setObject:app_key forKey:@"app_key"];
+	[self setObject:@"title,pic_url" forKey:@"fields"];
+	[self setObject:@"json" forKey:@"format"];
+	[self setObject:@"59miao.pictorials.list.get" forKey:@"method"];
+	[self setObject:@"1.1" forKey:@"v"];
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+	[df setDateFormat:@"YYYY-MM-dd HH:mm:SS"];
+	[self setObject:[df stringFromDate:date] forKey:@"timestamp"];
+
+}
+
+
+
 @end

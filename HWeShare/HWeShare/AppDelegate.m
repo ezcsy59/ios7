@@ -14,6 +14,8 @@
 #import "FourthViewController.h"
 #import "SearchVC.h"
 #import "HotVC.h"
+
+#import "IndexVC.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -35,7 +37,7 @@
     nav.navigationBar.tintColor= [UIColor darkGrayColor];
     [_tabBarController setViewControllers:[NSMutableArray arrayWithObjects:
                                                 nav,
-                                           [[SecondViewController alloc] init],[[ThirdViewController alloc] init],[[FourthViewController alloc] init],[[HotVC alloc] init],nil]];
+                                           [[SecondViewController alloc] init],[[IndexVC alloc] init],[[FourthViewController alloc] init],[[HotVC alloc] init],nil]];
     // Tab background Image
     [_tabBarController setBackgroundImageName:@"noise-dark-gray.png"];
     [_tabBarController setSelectedBackgroundImageName:@"noise-dark-blue.png"];
