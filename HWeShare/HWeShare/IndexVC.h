@@ -11,8 +11,13 @@
 #import "AOScrollerView.h"
 @interface IndexVC : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scroll;
 @property (nonatomic,retain) NSMutableArray *pics;
 
 @property (nonatomic,retain) NSMutableArray *titils;
+
+
+
+@property (strong, nonatomic) IBOutlet UIImageView *manshirt;
 
 @end

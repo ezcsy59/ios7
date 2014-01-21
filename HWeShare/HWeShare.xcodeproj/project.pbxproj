@@ -70,6 +70,9 @@
 		04A05C7A1888DE2B0081F252 /* 301.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A05C791888DE2B0081F252 /* 301.jpeg */; };
 		04A05C7C1888DE8D0081F252 /* 302.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A05C7B1888DE8D0081F252 /* 302.jpeg */; };
 		04A05C7E1888DF390081F252 /* 401.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A05C7D1888DF390081F252 /* 401.jpeg */; };
+		04A1B4E6188CB17100A122FD /* 304.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A1B4E5188CB17100A122FD /* 304.jpeg */; };
+		04A1B4E8188CB3AF00A122FD /* 402.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A1B4E7188CB3AF00A122FD /* 402.jpeg */; };
+		04A1B4EA188CB51C00A122FD /* 703.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A1B4E9188CB51C00A122FD /* 703.jpeg */; };
 		04A865B51869336100C3194E /* ICN_account_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A865951869334800C3194E /* ICN_account_ON.png */; };
 		04A865B61869336100C3194E /* ICN_account_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A865961869334800C3194E /* ICN_account_ON@2x.png */; };
 		04A865B71869336100C3194E /* ICN_account.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A865971869334800C3194E /* ICN_account.png */; };
@@ -263,6 +266,9 @@
 		04A05C791888DE2B0081F252 /* 301.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 301.jpeg; sourceTree = "<group>"; };
 		04A05C7B1888DE8D0081F252 /* 302.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 302.jpeg; sourceTree = "<group>"; };
 		04A05C7D1888DF390081F252 /* 401.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 401.jpeg; sourceTree = "<group>"; };
+		04A1B4E5188CB17100A122FD /* 304.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 304.jpeg; sourceTree = "<group>"; };
+		04A1B4E7188CB3AF00A122FD /* 402.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 402.jpeg; sourceTree = "<group>"; };
+		04A1B4E9188CB51C00A122FD /* 703.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 703.jpeg; sourceTree = "<group>"; };
 		04A865951869334800C3194E /* ICN_account_ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICN_account_ON.png; path = CRTabBar/ICN_account_ON.png; sourceTree = SOURCE_ROOT; };
 		04A865961869334800C3194E /* ICN_account_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ICN_account_ON@2x.png"; path = "CRTabBar/ICN_account_ON@2x.png"; sourceTree = SOURCE_ROOT; };
 		04A865971869334800C3194E /* ICN_account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICN_account.png; path = CRTabBar/ICN_account.png; sourceTree = SOURCE_ROOT; };
@@ -682,9 +688,12 @@
 				04A865DB1869350B00C3194E /* image-3.png */,
 				04A865DC1869350B00C3194E /* image-3@2x.png */,
 				04A05C7B1888DE8D0081F252 /* 302.jpeg */,
+				04A1B4E5188CB17100A122FD /* 304.jpeg */,
 				04A05C731888DA300081F252 /* 201.jpeg */,
+				04A1B4E7188CB3AF00A122FD /* 402.jpeg */,
 				04A865DD1869350B00C3194E /* image-4.png */,
 				04A05C7D1888DF390081F252 /* 401.jpeg */,
+				04A1B4E9188CB51C00A122FD /* 703.jpeg */,
 				04A05C771888DB0F0081F252 /* 206.jpeg */,
 				04A05C751888DAC40081F252 /* 205.jpeg */,
 				04A05C791888DE2B0081F252 /* 301.jpeg */,
@@ -881,6 +890,7 @@
 				04A865B81869336100C3194E /* ICN_account@2x.png in Resources */,
 				04AC5F30188768A200F96CCA /* HotVC.xib in Resources */,
 				04A865B91869336100C3194E /* ICN_brand_ON.png in Resources */,
+				04A1B4EA188CB51C00A122FD /* 703.jpeg in Resources */,
 				04A865BA1869336100C3194E /* ICN_brand_ON@2x.png in Resources */,
 				04A865BB1869336100C3194E /* ICN_brand.png in Resources */,
 				04A865BC1869336100C3194E /* ICN_brand@2x.png in Resources */,
@@ -906,6 +916,7 @@
 				04A865CB1869336100C3194E /* ICN_saved.png in Resources */,
 				04A865CC1869336100C3194E /* ICN_saved@2x.png in Resources */,
 				04A865CD1869336100C3194E /* ICN_tab_info_ON.png in Resources */,
+				04A1B4E6188CB17100A122FD /* 304.jpeg in Resources */,
 				04A865CE1869336100C3194E /* ICN_tab_info_ON@2x.png in Resources */,
 				04A865CF1869336100C3194E /* ICN_tab_info.png in Resources */,
 				04F83BB01885282200631306 /* readme.txt in Resources */,
@@ -923,6 +934,7 @@
 				0458922D18691D3700FC2B10 /* Default-568h@2x.png in Resources */,
 				04A8663418697E9000C3194E /* MJRefresh.bundle in Resources */,
 				046D836E187962DA0094F214 /* AKTabBarController.bundle in Resources */,
+				04A1B4E8188CB3AF00A122FD /* 402.jpeg in Resources */,
 				046D837C187966CE0094F214 /* CustomCell.xib in Resources */,
 				04A05C761888DAC40081F252 /* 205.jpeg in Resources */,
 				046D837E187966CE0094F214 /* TestViewController.xib in Resources */,

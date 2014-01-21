@@ -44,7 +44,10 @@
 	return @"精彩首页";
 }
 
-
+-(IBAction)UserClicked:(id)sender
+{
+    NSLog(@"惦记了");
+}
 
 - (void)viewDidLoad
 {
@@ -54,6 +57,15 @@
     { self.edgesForExtendedLayout = UIRectEdgeNone;}
 
     // Do any additional setup after loading the view from its nib.
+    
+    CGSize newSize = CGSizeMake(320, 568);
+    [self.scroll setContentSize:newSize];
+    
+    
+    self.manshirt.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(UserClicked:)];
+    [self.manshirt addGestureRecognizer:singleTap];
+    
     
     // Do any additional setup after loading the view from its nib.
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
@@ -90,6 +102,8 @@
         AOScrollerView *aSV = [[AOScrollerView alloc]initWithNameArr:self.pics titleArr:self.titils height:200];
         //添加进view
         [self.view addSubview:aSV];
+        
+    
         
     }
     

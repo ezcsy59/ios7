@@ -14,12 +14,25 @@
 #import "NSStringEx.h"
 
 #import "SBJSON.h"
-
+#import "UIViewController+AKTabBarController.h"
 @interface HotVC ()
 
 @end
 
 @implementation HotVC
+
+
+
+- (NSString *)tabImageName
+{
+	return @"image-2";
+}
+
+- (NSString *)tabTitle
+{
+	return @"特惠精选";
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

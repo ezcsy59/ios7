@@ -21,7 +21,7 @@
 //自定义实例化方法
 
 -(id)initWithNameArr:(NSMutableArray *)imageArr titleArr:(NSMutableArray *)titleArr height:(float)heightValue{
-    self=[super initWithFrame:CGRectMake(0, 0, WIDTH, 416)];
+    self=[super initWithFrame:CGRectMake(0, 0, WIDTH, heightValue)];
     if (self) {
         page=0;//设置当前页为1
         

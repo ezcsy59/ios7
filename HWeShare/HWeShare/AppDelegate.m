@@ -36,8 +36,7 @@
 
     nav.navigationBar.tintColor= [UIColor darkGrayColor];
     [_tabBarController setViewControllers:[NSMutableArray arrayWithObjects:
-                                                nav,
-                                           [[SecondViewController alloc] init],[[IndexVC alloc] init],[[FourthViewController alloc] init],[[HotVC alloc] init],nil]];
+                                                nav,[[IndexVC alloc] init],[[FourthViewController alloc] init],[[HotVC alloc] init],nil]];
     // Tab background Image
     [_tabBarController setBackgroundImageName:@"noise-dark-gray.png"];
     [_tabBarController setSelectedBackgroundImageName:@"noise-dark-blue.png"];
