@@ -31,7 +31,7 @@
 
 -(void)viewDidLoad
 {
-    NSString *urlString = @"http://humanplatform.sinaapp.com/index.php/Login/ios_login";
+    NSString *urlString = @"http://humanplatform.sinaapp.com/index.php/Product/ios_index";
 	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	NSURL *url = [NSURL URLWithString:urlString];
     ASIHTTPRequest *request = [ ASIHTTPRequest requestWithURL :url];
