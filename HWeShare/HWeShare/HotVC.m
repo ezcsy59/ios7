@@ -7,8 +7,7 @@
 //
 
 #import "HotVC.h"
-#import "CuzyAdBarView.h"
-#import "CuzyAdSDK.h"
+
 #import "SDImageView+SDWebCache.h"
 #import "NSMutableDictionaryTaobao.h"
 #import "NSStringEx.h"

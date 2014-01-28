@@ -8,8 +8,7 @@
 
 
 #import "SecondViewController.h"
-#import "CuzyAdBarView.h"
-#import "CuzyAdSDK.h"
+
 @implementation SecondViewController
 
 - (id)init
@@ -38,18 +37,12 @@
     
     
     
-    [[CuzyAdSDK sharedAdSDK] setDelegate:self];
-//    [[CuzyAdSDK sharedAdSDK] registerAppWithAppKey:@"200446" andAppSecret:@"80dbaef8de4661c6fd42683b3ea65fb0"];
-    
-    [[CuzyAdSDK sharedAdSDK] setTestingURL];
-    [[CuzyAdSDK sharedAdSDK] registerAppWithAppKey:@"200056" 	andAppSecret:@"051a9e4652fc5b881dfc6ba74d3cd633"];
-    
 
     }
 
 -(void)viewWillAppear:(BOOL)animated{
 
-      [[CuzyAdSDK sharedAdSDK] fetchAppItemWithThemeID:@"" orSearchKeywords:@"iphone" withPageIndex:0];
+    
 
     
 }
