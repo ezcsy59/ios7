@@ -34,9 +34,18 @@
     
     UINavigationController *nav= [[UINavigationController alloc] initWithRootViewController:seach];
 
+    
+    
+    HotVC *h=[[HotVC alloc] init];
+    UINavigationController *hot= [[UINavigationController alloc] initWithRootViewController:h];
+    
+    IndexVC *in=[[IndexVC alloc] init];
+    UINavigationController *index= [[UINavigationController alloc] initWithRootViewController:in];
+    
     nav.navigationBar.tintColor= [UIColor darkGrayColor];
+    hot.navigationBar.tintColor= [UIColor darkGrayColor];
     [_tabBarController setViewControllers:[NSMutableArray arrayWithObjects:
-                                                nav,[[IndexVC alloc] init],[[FourthViewController alloc] init],[[HotVC alloc] init],nil]];
+                                                nav,index,[[FourthViewController alloc] init],hot,nil]];
     // Tab background Image
     [_tabBarController setBackgroundImageName:@"noise-dark-gray.png"];
     [_tabBarController setSelectedBackgroundImageName:@"noise-dark-blue.png"];

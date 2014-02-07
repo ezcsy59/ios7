@@ -29,10 +29,21 @@
         // Custom initialization
         self.pics=[[NSMutableArray alloc] init];
         self.titils =[[NSMutableArray alloc] init];
-       
+        
+        
+       self.navigationController.navigationBarHidden = YES;     
     }
     return self;
 }
+
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
 
 - (NSString *)tabImageName
 {

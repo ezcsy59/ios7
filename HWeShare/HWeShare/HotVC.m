@@ -7,11 +7,11 @@
 //
 
 #import "HotVC.h"
-
+#import "WebVC.h"
 #import "SDImageView+SDWebCache.h"
 #import "NSMutableDictionaryTaobao.h"
 #import "NSStringEx.h"
-
+#import "AppDelegate.h"
 #import "SBJSON.h"
 #import "UIViewController+AKTabBarController.h"
 @interface HotVC ()
@@ -38,6 +38,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title=@"特惠精选";
     }
     return self;
 }
@@ -146,6 +147,43 @@
     
     return cell;
 }
+
+
+
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     [detailViewController release];
+     */
+    
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+     NSMutableDictionary *temp = [self.array objectAtIndex:indexPath.row];
+    
+     NSURL *url = [NSURL URLWithString:[temp objectForKey:@"click_url" ] ];
+    
+    myDelegate.url=url;
+    
+    WebVC *webvc =[[WebVC alloc]init];
+    [self.navigationController pushViewController:webvc animated:YES];
+
+    
+//    myDelegate.detail = [self.array objectAtIndex:indexPath.row];
+    
+//    DetailVC *de = [[DetailVC alloc] init];
+//    [self.navigationController pushViewController:de animated:YES];
+    
+}
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
