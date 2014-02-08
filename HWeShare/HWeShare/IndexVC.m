@@ -14,7 +14,8 @@
 #import "NSStringEx.h"
 
 #import "SBJSON.h"
-
+#import "TestViewController.h"
+#import "AppDelegate.h"
 
 @interface IndexVC ()
 
@@ -42,8 +43,8 @@
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:YES animated:animated];
-}
 
+}
 
 - (NSString *)tabImageName
 {
@@ -55,10 +56,189 @@
 	return @"精彩首页";
 }
 
--(IBAction)UserClicked:(id)sender
+-(IBAction)ManshirtClicked:(id)sender
 {
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"男装";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
     NSLog(@"惦记了");
 }
+
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+//
+//-(IBAction)ManshirtClicked:(id)sender
+//{
+//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+//    myDelegate.testsch = @"男装";
+//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+//    
+//    TestViewController *t = [[TestViewController alloc] init];
+//    
+//    
+//    
+//    [self.navigationController pushViewController:t animated:true];
+//    NSLog(@"惦记了");
+//}
+
+
 
 - (void)viewDidLoad
 {
@@ -74,7 +254,7 @@
     
     
     self.manshirt.userInteractionEnabled=YES;
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(UserClicked:)];
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(ManshirtClicked:)];
     [self.manshirt addGestureRecognizer:singleTap];
     
     

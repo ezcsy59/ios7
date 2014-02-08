@@ -19,5 +19,16 @@
 
 
 @property (strong, nonatomic) IBOutlet UIImageView *manshirt;
+@property (strong, nonatomic) IBOutlet UIImageView *manpant;
+@property (strong, nonatomic) IBOutlet UIImageView *sportshirt;
+@property (strong, nonatomic) IBOutlet UIImageView *ladyshirt;
+@property (strong, nonatomic) IBOutlet UIImageView *onepiece;
+@property (strong, nonatomic) IBOutlet UIImageView *skirt;
+@property (strong, nonatomic) IBOutlet UIImageView *casualshoe;
+@property (strong, nonatomic) IBOutlet UIImageView *canvashoe;
+@property (strong, nonatomic) IBOutlet UIImageView *sportshoe;
+@property (strong, nonatomic) IBOutlet UIImageView *mobilepower;
+@property (strong, nonatomic) IBOutlet UIImageView *phoneshell;
+@property (strong, nonatomic) IBOutlet UIImageView *earphone;
 
 @end

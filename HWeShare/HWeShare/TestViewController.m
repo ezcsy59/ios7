@@ -44,6 +44,16 @@ static int page_no;
     return self;
 }
 
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    
+    
+    
+}
+
 //- (NSString *)tabImageName
 //{
 //	return @"sousuonew";
@@ -107,7 +117,7 @@ static int page_no;
 {
     
     [super viewDidLoad];
-    self.navigationItem.title= @"测试";
+    self.navigationItem.title= self.search;
     
     // 防止block循环retain，所以用__unsafe_unretained
     __unsafe_unretained TestViewController *vc = self;
