@@ -40,6 +40,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+    { self.edgesForExtendedLayout = UIRectEdgeNone;}
+    
     // Do any additional setup after loading the view from its nib.
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
     self.ti.text = [myDelegate.detail objectForKey:@"title"];
