@@ -70,175 +70,158 @@
     NSLog(@"惦记了");
 }
 
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
-//
-//-(IBAction)ManshirtClicked:(id)sender
-//{
-//    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-//    myDelegate.testsch = @"男装";
-//    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
-//    
-//    TestViewController *t = [[TestViewController alloc] init];
-//    
-//    
-//    
-//    [self.navigationController pushViewController:t animated:true];
-//    NSLog(@"惦记了");
-//}
+-(IBAction)ManpantClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"男裤";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
+    NSLog(@"惦记了");
+}
 
+-(IBAction)SportshirtClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"运动装";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
+    NSLog(@"惦记了");
+}
 
+-(IBAction)LadyshirtClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"女装";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
+    NSLog(@"惦记了");
+}
+
+-(IBAction)OnepieceClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"连衣裙";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
+    NSLog(@"惦记了");
+}
+
+-(IBAction)SkirtClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"半身裙";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
+    NSLog(@"惦记了");
+}
+
+-(IBAction)CasualshoeClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"休闲鞋";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
+    NSLog(@"惦记了");
+}
+
+-(IBAction)CanvashoeClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"帆布鞋";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
+    NSLog(@"惦记了");
+}
+
+-(IBAction)SportshoeClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"运动鞋";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    [self.navigationController pushViewController:t animated:true];
+    
+    NSLog(@"惦记了");
+}
+
+-(IBAction)MobilepowerClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"移动电源";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
+    NSLog(@"惦记了");
+}
+
+-(IBAction)PhoneshellClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"手机外壳";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
+    NSLog(@"惦记了");
+}
+
+-(IBAction)EarphoneClicked:(id)sender
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.testsch = @"耳机耳麦";
+    NSLog( @"%s,%d" , __FUNCTION__ , __LINE__ );
+    
+    TestViewController *t = [[TestViewController alloc] init];
+    
+    
+    
+    [self.navigationController pushViewController:t animated:true];
+    NSLog(@"惦记了");
+}
 
 - (void)viewDidLoad
 {
@@ -256,6 +239,60 @@
     self.manshirt.userInteractionEnabled=YES;
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(ManshirtClicked:)];
     [self.manshirt addGestureRecognizer:singleTap];
+
+    
+    self.manpant.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(ManpantClicked:)];
+    [self.manpant addGestureRecognizer:singleTap2];
+    
+    
+    self.sportshirt.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap3 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(SportshirtClicked:)];
+    [self.sportshirt addGestureRecognizer:singleTap3];
+    
+    self.ladyshirt.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap4 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(LadyshirtClicked:)];
+    [self.ladyshirt addGestureRecognizer:singleTap4];
+    
+    self.onepiece.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap5 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(OnepieceClicked:)];
+    [self.onepiece addGestureRecognizer:singleTap5];
+    
+    self.skirt.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap6 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(SkirtClicked:)];
+    [self.skirt addGestureRecognizer:singleTap6];
+    
+    self.casualshoe.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap7 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(CasualshoeClicked:)];
+    [self.casualshoe addGestureRecognizer:singleTap7];
+    
+    self.canvashoe.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap8 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(CanvashoeClicked:)];
+    [self.canvashoe addGestureRecognizer:singleTap8];
+    
+    self.sportshoe.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap9 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(SportshoeClicked:)];
+    [self.sportshoe addGestureRecognizer:singleTap9];
+    
+    self.mobilepower.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap10 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(MobilepowerClicked:)];
+    [self.mobilepower addGestureRecognizer:singleTap10];
+    
+    self.phoneshell.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap11 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(PhoneshellClicked:)];
+    [self.phoneshell addGestureRecognizer:singleTap11];
+    
+    self.earphone.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap12 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(EarphoneClicked:)];
+    [self.earphone addGestureRecognizer:singleTap12];
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     // Do any additional setup after loading the view from its nib.
