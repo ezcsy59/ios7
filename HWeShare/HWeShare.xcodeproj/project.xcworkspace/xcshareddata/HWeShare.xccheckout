@@ -5,11 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>91C7B4A9-AACA-49C3-BF70-D59BB156E07D</string>
+	<string>8EC2B686-CBAF-4BF1-AA5B-6B4A471065B9</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HWeShare</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>0397D792-30D8-479F-9F09-3704F5672089</key>
+		<string>https://github.com/ezcsy59/HWeShare.git</string>
 		<key>A3BCE231-FC58-4C90-9309-321352B5AE23</key>
 		<string>https://github.com/ezcsy59/ios7.git</string>
 	</dict>
@@ -17,17 +19,27 @@
 	<string>HWeShare/HWeShare.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>0397D792-30D8-479F-9F09-3704F5672089</key>
+		<string>../..</string>
 		<key>A3BCE231-FC58-4C90-9309-321352B5AE23</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ezcsy59/ios7.git</string>
+	<string>https://github.com/ezcsy59/HWeShare.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>A3BCE231-FC58-4C90-9309-321352B5AE23</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0397D792-30D8-479F-9F09-3704F5672089</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HWeShare</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
