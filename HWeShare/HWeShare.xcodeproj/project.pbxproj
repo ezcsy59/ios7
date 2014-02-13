@@ -49,6 +49,9 @@
 		049268FA187A410000383E0C /* UIViewController+AKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049268F9187A410000383E0C /* UIViewController+AKTabBarController.m */; };
 		049268FC187A466C00383E0C /* sousuo.png in Resources */ = {isa = PBXBuildFile; fileRef = 049268FB187A466A00383E0C /* sousuo.png */; };
 		049268FE187A4A2B00383E0C /* sousuonew.png in Resources */ = {isa = PBXBuildFile; fileRef = 049268FD187A4A2900383E0C /* sousuonew.png */; };
+		049879BC18AC68670028C16F /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 049879BB18AC68670028C16F /* UIButton+Bootstrap.m */; };
+		049879BF18AC68AE0028C16F /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 049879BE18AC68AE0028C16F /* NSString+FontAwesome.m */; };
+		049879C918AC70570028C16F /* libWeChatSDK_armv7_armv7s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049879C618AC70570028C16F /* libWeChatSDK_armv7_armv7s.a */; };
 		0498AFE8186AC3BD00090B73 /* TimeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498AFE7186AC3BD00090B73 /* TimeTools.m */; };
 		0498F82D187A875100AF452A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498F824187A875000AF452A /* FirstViewController.m */; };
 		0498F82E187A875100AF452A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498F826187A875000AF452A /* SecondViewController.m */; };
@@ -233,6 +236,13 @@
 		049268F9187A410000383E0C /* UIViewController+AKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AKTabBarController.m"; sourceTree = "<group>"; };
 		049268FB187A466A00383E0C /* sousuo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sousuo.png; sourceTree = "<group>"; };
 		049268FD187A4A2900383E0C /* sousuonew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sousuonew.png; sourceTree = "<group>"; };
+		049879BA18AC68670028C16F /* UIButton+Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Bootstrap.h"; sourceTree = "<group>"; };
+		049879BB18AC68670028C16F /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Bootstrap.m"; sourceTree = "<group>"; };
+		049879BD18AC68AE0028C16F /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		049879BE18AC68AE0028C16F /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		049879C618AC70570028C16F /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
+		049879C718AC70570028C16F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		049879C818AC70570028C16F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		0498AFE6186AC3BD00090B73 /* TimeTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTools.h; sourceTree = "<group>"; };
 		0498AFE7186AC3BD00090B73 /* TimeTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTools.m; sourceTree = "<group>"; };
 		0498F823187A875000AF452A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -400,6 +410,7 @@
 				04A86608186965F100C3194E /* MobileCoreServices.framework in Frameworks */,
 				04A86606186965E500C3194E /* SystemConfiguration.framework in Frameworks */,
 				0458921718691D3700FC2B10 /* UIKit.framework in Frameworks */,
+				049879C918AC70570028C16F /* libWeChatSDK_armv7_armv7s.a in Frameworks */,
 				0458921918691D3700FC2B10 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +421,7 @@
 		0458920A18691D3700FC2B10 = {
 			isa = PBXGroup;
 			children = (
+				049879C518AC70570028C16F /* WeiXinSDK */,
 				047E463D1883CE2000A85527 /* icon_small.png */,
 				047E463B1883CE1500A85527 /* icon_big.png */,
 				0458921C18691D3700FC2B10 /* HWeShare */,
@@ -541,6 +553,27 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		049879B918AC68480028C16F /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				049879BD18AC68AE0028C16F /* NSString+FontAwesome.h */,
+				049879BE18AC68AE0028C16F /* NSString+FontAwesome.m */,
+				049879BA18AC68670028C16F /* UIButton+Bootstrap.h */,
+				049879BB18AC68670028C16F /* UIButton+Bootstrap.m */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		049879C518AC70570028C16F /* WeiXinSDK */ = {
+			isa = PBXGroup;
+			children = (
+				049879C618AC70570028C16F /* libWeChatSDK_armv7_armv7s.a */,
+				049879C718AC70570028C16F /* WXApi.h */,
+				049879C818AC70570028C16F /* WXApiObject.h */,
+			);
+			path = WeiXinSDK;
+			sourceTree = "<group>";
+		};
 		0498AFE9186AC3CA00090B73 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +677,7 @@
 		04AB98391869230500178CEB /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				049879B918AC68480028C16F /* Button */,
 				04AC5F3B1887D02500F96CCA /* AOImageView */,
 				04F87CFA1880FD3D001633E8 /* menu */,
 				046D83B5187968AA0094F214 /* SBJson_3.1.1 */,
@@ -1002,7 +1036,9 @@
 				0498F82F187A875100AF452A /* ThirdViewController.m in Sources */,
 				04AC5F561887D02500F96CCA /* SDWebImageDownloader.m in Sources */,
 				0498F830187A875100AF452A /* FourthViewController.m in Sources */,
+				049879BC18AC68670028C16F /* UIButton+Bootstrap.m in Sources */,
 				04AC5F571887D02500F96CCA /* SDWebImageManager.m in Sources */,
+				049879BF18AC68AE0028C16F /* NSString+FontAwesome.m in Sources */,
 				0498F831187A875100AF452A /* ContentViewController.m in Sources */,
 				04AC5F551887D02500F96CCA /* SDImageCache.m in Sources */,
 				049D62DF187CE3BE00729266 /* SearchVC.m in Sources */,
@@ -1099,6 +1135,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/mac/Documents/ios7/HWeShare/HWeShare/sdk,
+					/Users/mac/Documents/ios7/HWeShare/HWeShare/WeChatSDK_1.4.2.1,
+					/Users/mac/Documents/ios7/HWeShare/WeiXinSDK,
 				);
 				OTHER_LDFLAGS = (
 					"-fobjc",
@@ -1125,6 +1163,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/mac/Documents/ios7/HWeShare/HWeShare/sdk,
+					/Users/mac/Documents/ios7/HWeShare/HWeShare/WeChatSDK_1.4.2.1,
+					/Users/mac/Documents/ios7/HWeShare/WeiXinSDK,
 				);
 				OTHER_LDFLAGS = (
 					"-fobjc",

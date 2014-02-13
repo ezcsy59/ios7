@@ -11,6 +11,8 @@
 #import "SDImageView+SDWebCache.h"
 #import "WebVC.h"
 #import "KxMenu.h"
+
+#import "UIButton+Bootstrap.h"
 @interface DetailVC ()
 
 @end
@@ -57,7 +59,13 @@
    
     self.navigationItem.rightBarButtonItem = btnCancel;
     
-    
+    [self.lookbutton primaryStyle];
+}
+
+
+-(IBAction)pushMenuItem:(id)sender
+{
+    NSLog(@"惦记了");
 }
 
 - (void)showMenu:(UIBarButtonItem *)sender
@@ -79,12 +87,12 @@
       [KxMenuItem menuItem:@"分享到微信朋友圈"
                      image:nil
                     target:self
-                    action:@selector(pushMenuItem:)],
+                    action:@selector(pushMenuItem2:)],
       
       [KxMenuItem menuItem:@"分享到分享平台"
                      image:nil
                     target:self
-                    action:@selector(pushMenuItem:)],
+                    action:@selector(pushMenuItem3:)],
            ];
     
     KxMenuItem *first = menuItems[0];

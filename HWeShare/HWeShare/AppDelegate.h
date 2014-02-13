@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "CRTabBarController.h"
+#import "WXApi.h"
 
 @class AKTabBarController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate,CRTabBarControllerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,CRTabBarControllerDelegate,WXApiDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
