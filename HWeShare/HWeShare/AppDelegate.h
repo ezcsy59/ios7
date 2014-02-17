@@ -10,6 +10,7 @@
 #import "CRTabBarController.h"
 #import "WXApi.h"
 
+
 @class AKTabBarController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,CRTabBarControllerDelegate,WXApiDelegate>

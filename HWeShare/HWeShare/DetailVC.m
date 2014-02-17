@@ -62,11 +62,61 @@
     [self.lookbutton primaryStyle];
 }
 
+- (void) sendLinkContent
+{
+    WXMediaMessage *message = [WXMediaMessage message];
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    message.title = @"分享个宝贝儿";
+    message.description = [myDelegate.detail objectForKey:@"title"];;
+    [message setThumbImage: self.image.image];
+    
+    WXWebpageObject *ext = [WXWebpageObject object];
+    ext.webpageUrl = [myDelegate.detail objectForKey:@"click_url"];
+    
+    message.mediaObject = ext;
+    
+    SendMessageToWXReq* req = [[SendMessageToWXReq alloc] init];
+    req.bText = NO;
+    req.message = message;
+    req.scene = WXSceneSession;
+    
+    [WXApi sendReq:req];
+}
+
+- (void) sendLinkContent2
+{
+    WXMediaMessage *message = [WXMediaMessage message];
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    message.title = @"分享个宝贝儿";
+    message.description = [myDelegate.detail objectForKey:@"title"];;
+    [message setThumbImage: self.image.image];
+    
+    WXWebpageObject *ext = [WXWebpageObject object];
+    ext.webpageUrl = [myDelegate.detail objectForKey:@"click_url"];
+    
+    message.mediaObject = ext;
+    
+    SendMessageToWXReq* req = [[SendMessageToWXReq alloc] init];
+    req.bText = NO;
+    req.message = message;
+    req.scene = WXSceneTimeline;
+    
+    [WXApi sendReq:req];
+}
+
 
 -(IBAction)pushMenuItem:(id)sender
 {
+    [self sendLinkContent];
     NSLog(@"惦记了");
 }
+
+-(IBAction)pushMenuItem2:(id)sender
+{
+    [self sendLinkContent2];
+    NSLog(@"惦记了");
+}
+
 
 - (void)showMenu:(UIBarButtonItem *)sender
 {
