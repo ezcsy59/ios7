@@ -82,6 +82,8 @@
 		04A1B4E6188CB17100A122FD /* 304.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A1B4E5188CB17100A122FD /* 304.jpeg */; };
 		04A1B4E8188CB3AF00A122FD /* 402.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A1B4E7188CB3AF00A122FD /* 402.jpeg */; };
 		04A1B4EA188CB51C00A122FD /* 703.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A1B4E9188CB51C00A122FD /* 703.jpeg */; };
+		04A786AE18B45500002A844E /* ShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A786AC18B45500002A844E /* ShareVC.m */; };
+		04A786AF18B45500002A844E /* ShareVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A786AD18B45500002A844E /* ShareVC.xib */; };
 		04A865B51869336100C3194E /* ICN_account_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A865951869334800C3194E /* ICN_account_ON.png */; };
 		04A865B61869336100C3194E /* ICN_account_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A865961869334800C3194E /* ICN_account_ON@2x.png */; };
 		04A865B71869336100C3194E /* ICN_account.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A865971869334800C3194E /* ICN_account.png */; };
@@ -293,6 +295,9 @@
 		04A1B4E5188CB17100A122FD /* 304.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 304.jpeg; sourceTree = "<group>"; };
 		04A1B4E7188CB3AF00A122FD /* 402.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 402.jpeg; sourceTree = "<group>"; };
 		04A1B4E9188CB51C00A122FD /* 703.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 703.jpeg; sourceTree = "<group>"; };
+		04A786AB18B45500002A844E /* ShareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareVC.h; sourceTree = "<group>"; };
+		04A786AC18B45500002A844E /* ShareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareVC.m; sourceTree = "<group>"; };
+		04A786AD18B45500002A844E /* ShareVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareVC.xib; sourceTree = "<group>"; };
 		04A865951869334800C3194E /* ICN_account_ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICN_account_ON.png; path = CRTabBar/ICN_account_ON.png; sourceTree = SOURCE_ROOT; };
 		04A865961869334800C3194E /* ICN_account_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ICN_account_ON@2x.png"; path = "CRTabBar/ICN_account_ON@2x.png"; sourceTree = SOURCE_ROOT; };
 		04A865971869334800C3194E /* ICN_account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICN_account.png; path = CRTabBar/ICN_account.png; sourceTree = SOURCE_ROOT; };
@@ -662,6 +667,9 @@
 				04AC5F361887CC3500F96CCA /* IndexVC.h */,
 				04AC5F371887CC3500F96CCA /* IndexVC.m */,
 				04AC5F381887CC3500F96CCA /* IndexVC.xib */,
+				04A786AB18B45500002A844E /* ShareVC.h */,
+				04A786AC18B45500002A844E /* ShareVC.m */,
+				04A786AD18B45500002A844E /* ShareVC.xib */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -962,6 +970,7 @@
 				04A865CA1869336100C3194E /* ICN_saved_ON@2x.png in Resources */,
 				04AC5F3A1887CC3500F96CCA /* IndexVC.xib in Resources */,
 				04A865CB1869336100C3194E /* ICN_saved.png in Resources */,
+				04A786AF18B45500002A844E /* ShareVC.xib in Resources */,
 				04A865CC1869336100C3194E /* ICN_saved@2x.png in Resources */,
 				04A865CD1869336100C3194E /* ICN_tab_info_ON.png in Resources */,
 				04A1B4E6188CB17100A122FD /* 304.jpeg in Resources */,
@@ -1060,6 +1069,7 @@
 				046D8578187968AC0094F214 /* SBJsonStreamParserAccumulator.m in Sources */,
 				046D8579187968AC0094F214 /* SBJsonStreamParserAdapter.m in Sources */,
 				046D857A187968AC0094F214 /* SBJsonStreamParserState.m in Sources */,
+				04A786AE18B45500002A844E /* ShareVC.m in Sources */,
 				046D857B187968AC0094F214 /* SBJsonStreamWriter.m in Sources */,
 				046D857C187968AC0094F214 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				046D857D187968AC0094F214 /* SBJsonStreamWriterState.m in Sources */,

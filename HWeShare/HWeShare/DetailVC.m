@@ -88,7 +88,7 @@
     WXMediaMessage *message = [WXMediaMessage message];
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
     message.title = @"分享个宝贝儿";
-    message.description = [myDelegate.detail objectForKey:@"title"];;
+    message.description = [myDelegate.detail objectForKey:@"title"];
     [message setThumbImage: self.image.image];
     
     WXWebpageObject *ext = [WXWebpageObject object];
@@ -119,14 +119,21 @@
 
 -(IBAction)pushMenuItem3:(id)sender
 {
-    urlString = [NSString stringWithFormat:@"http://api.59miao.com/router/rest?%@", urlString];
-	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-	NSURL *url = [NSURL URLWithString:urlString];
-    ASIHTTPRequest *request = [ ASIHTTPRequest requestWithURL :url];
+//    urlString = [NSString stringWithFormat:@"http://api.59miao.com/router/rest?%@", urlString];
+//	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+	  NSURL *url = [NSURL URLWithString:@"http://humanplatform.sinaapp.com/index.php/Product/create"];
+     ASIFormDataRequest *request = [  ASIFormDataRequest requestWithURL :url];
+    [request setPostValue:[myDelegate.detail objectForKey:@"title"] forKey:@"title"];
+    [request setPostValue:[myDelegate.detail objectForKey:@"price"] forKey:@"price"];
+     [request setPostValue:[myDelegate.detail objectForKey:@"pic_url"] forKey:@"pic_url"];
+     [request setPostValue:[myDelegate.detail objectForKey:@"sid"] forKey:@"sid"];
+     [request setPostValue:[myDelegate.detail objectForKey:@"click_url"] forKey:@"click_url"];
+     [request setPostValue:[myDelegate.detail objectForKey:@"seller_name"] forKey:@"seller_name"];
     //开始同步请求
     [request startSynchronous];
-
+    
     NSLog(@"惦记了");
 }
 
