@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WXApiObject.h"
+#import "ASIHTTPRequest.h"
 
 @interface DetailVC : UIViewController
 

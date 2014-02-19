@@ -117,6 +117,19 @@
     NSLog(@"惦记了");
 }
 
+-(IBAction)pushMenuItem3:(id)sender
+{
+    urlString = [NSString stringWithFormat:@"http://api.59miao.com/router/rest?%@", urlString];
+	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	NSURL *url = [NSURL URLWithString:urlString];
+    ASIHTTPRequest *request = [ ASIHTTPRequest requestWithURL :url];
+    
+    //开始同步请求
+    [request startSynchronous];
+
+    NSLog(@"惦记了");
+}
+
 
 - (void)showMenu:(UIBarButtonItem *)sender
 {

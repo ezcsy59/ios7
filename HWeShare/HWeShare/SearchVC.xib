@@ -23,7 +23,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="raZ-2q-7wf"/>
-                        <outlet property="delegate" destination="-1" id="ppG-0H-LJa"/>
+                        <outlet property="delegate" destination="-1" id="zIz-5o-Y5J"/>
                     </connections>
                 </tableView>
                 <searchBar contentMode="redraw" barStyle="black" placeholder="搜索你喜爱的商品" showsCancelButton="YES" id="4">
