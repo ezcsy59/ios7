@@ -45,6 +45,9 @@
 {
     [super viewDidLoad];
 
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+    { self.edgesForExtendedLayout = UIRectEdgeNone;}
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  

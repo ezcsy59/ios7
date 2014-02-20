@@ -63,7 +63,6 @@
 		049B650418B2FA0600AFF7C8 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B64FE18B2FA0600AFF7C8 /* FMDatabaseQueue.m */; };
 		049B650518B2FA0600AFF7C8 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B650018B2FA0600AFF7C8 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		049B650718B302FE00AFF7C8 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 049B650618B302FE00AFF7C8 /* libsqlite3.0.dylib */; };
-		049B830718B1A76600C6DE66 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049B830418B1A76600C6DE66 /* libWeChatSDK.a */; };
 		049D62DF187CE3BE00729266 /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D62DD187CE3BE00729266 /* SearchVC.m */; };
 		049D62E0187CE3BF00729266 /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D62DE187CE3BE00729266 /* SearchVC.xib */; };
 		049D62E4187D225700729266 /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D62E2187D225600729266 /* DetailVC.m */; };
@@ -168,6 +167,7 @@
 		04AC5F581887D02500F96CCA /* UrlImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC5F4F1887D02500F96CCA /* UrlImageButton.m */; };
 		04AC5F591887D02500F96CCA /* UrlImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC5F511887D02500F96CCA /* UrlImageView.m */; };
 		04F87CFE1880FD4E001633E8 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F87CFD1880FD4E001633E8 /* KxMenu.m */; };
+		6540D7CF18B600550091391C /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6540D7CC18B600550091391C /* libWeChatSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -271,9 +271,6 @@
 		049B64FF18B2FA0600AFF7C8 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		049B650018B2FA0600AFF7C8 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		049B650618B302FE00AFF7C8 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		049B830418B1A76600C6DE66 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		049B830518B1A76600C6DE66 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		049B830618B1A76600C6DE66 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		049D62DC187CE3BE00729266 /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
 		049D62DD187CE3BE00729266 /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
 		049D62DE187CE3BE00729266 /* SearchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
@@ -417,6 +414,9 @@
 		04AC5F511887D02500F96CCA /* UrlImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlImageView.m; sourceTree = "<group>"; };
 		04F87CFC1880FD4E001633E8 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
 		04F87CFD1880FD4E001633E8 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
+		6540D7CC18B600550091391C /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		6540D7CD18B600550091391C /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		6540D7CE18B600550091391C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,7 +429,7 @@
 				04A8660E186966CD00C3194E /* libz.1.2.5.dylib in Frameworks */,
 				04A8660C186966BD00C3194E /* libxml2.2.dylib in Frameworks */,
 				04A8660A1869660B00C3194E /* CFNetwork.framework in Frameworks */,
-				049B830718B1A76600C6DE66 /* libWeChatSDK.a in Frameworks */,
+				6540D7CF18B600550091391C /* libWeChatSDK.a in Frameworks */,
 				0458921B18691D3700FC2B10 /* CoreGraphics.framework in Frameworks */,
 				04A86608186965F100C3194E /* MobileCoreServices.framework in Frameworks */,
 				04A86606186965E500C3194E /* SystemConfiguration.framework in Frameworks */,
@@ -444,7 +444,7 @@
 		0458920A18691D3700FC2B10 = {
 			isa = PBXGroup;
 			children = (
-				049879C518AC70570028C16F /* WeiXinSDK */,
+				6540D7CB18B600550091391C /* WeiXinSDK */,
 				047E463D1883CE2000A85527 /* icon_small.png */,
 				047E463B1883CE1500A85527 /* icon_big.png */,
 				0458921C18691D3700FC2B10 /* HWeShare */,
@@ -586,16 +586,6 @@
 				049879BB18AC68670028C16F /* UIButton+Bootstrap.m */,
 			);
 			name = Button;
-			sourceTree = "<group>";
-		};
-		049879C518AC70570028C16F /* WeiXinSDK */ = {
-			isa = PBXGroup;
-			children = (
-				049B830418B1A76600C6DE66 /* libWeChatSDK.a */,
-				049B830518B1A76600C6DE66 /* WXApi.h */,
-				049B830618B1A76600C6DE66 /* WXApiObject.h */,
-			);
-			path = WeiXinSDK;
 			sourceTree = "<group>";
 		};
 		0498AFE9186AC3CA00090B73 /* Tools */ = {
@@ -867,6 +857,16 @@
 				04F87CFD1880FD4E001633E8 /* KxMenu.m */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		6540D7CB18B600550091391C /* WeiXinSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6540D7CC18B600550091391C /* libWeChatSDK.a */,
+				6540D7CD18B600550091391C /* WXApi.h */,
+				6540D7CE18B600550091391C /* WXApiObject.h */,
+			);
+			path = WeiXinSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1189,6 +1189,7 @@
 					/Users/mac/Documents/ios7/HWeShare/HWeShare/sdk,
 					/Users/mac/Documents/ios7/HWeShare/HWeShare/WeChatSDK_1.4.2.1,
 					/Users/mac/Documents/ios7/HWeShare/WeiXinSDK,
+					/Users/human/Documents/ios7/HWeShare/WeiXinSDK,
 				);
 				OTHER_LDFLAGS = (
 					"-fobjc",
@@ -1217,6 +1218,7 @@
 					/Users/mac/Documents/ios7/HWeShare/HWeShare/sdk,
 					/Users/mac/Documents/ios7/HWeShare/HWeShare/WeChatSDK_1.4.2.1,
 					/Users/mac/Documents/ios7/HWeShare/WeiXinSDK,
+					/Users/human/Documents/ios7/HWeShare/WeiXinSDK,
 				);
 				OTHER_LDFLAGS = (
 					"-fobjc",
