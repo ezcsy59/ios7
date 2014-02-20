@@ -127,7 +127,7 @@
      ASIFormDataRequest *request = [  ASIFormDataRequest requestWithURL :url];
     [request setPostValue:[myDelegate.detail objectForKey:@"title"] forKey:@"title"];
     [request setPostValue:[myDelegate.detail objectForKey:@"price"] forKey:@"price"];
-     [request setPostValue:[myDelegate.detail objectForKey:@"pic_url"] forKey:@"pic_url"];
+     [request setPostValue:[myDelegate.detail objectForKey:@"original_pic_url"] forKey:@"pic_url"];
      [request setPostValue:[myDelegate.detail objectForKey:@"sid"] forKey:@"sid"];
      [request setPostValue:[myDelegate.detail objectForKey:@"click_url"] forKey:@"click_url"];
      [request setPostValue:[myDelegate.detail objectForKey:@"seller_name"] forKey:@"seller_name"];
