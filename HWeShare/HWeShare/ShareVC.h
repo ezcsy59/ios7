@@ -13,5 +13,5 @@
 
 
 @property (retain,nonatomic) NSMutableArray *array;
-
+-(void)loadmore;
 @end

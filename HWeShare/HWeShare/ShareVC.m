@@ -13,7 +13,12 @@
 #import "UIViewController+AKTabBarController.h"
 #import "SBJSON.h"
 #import "CustomCell.h"
-@interface ShareVC ()
+#import "MJRefresh.h"
+@interface ShareVC ()<MJRefreshBaseViewDelegate>
+{
+    MJRefreshHeaderView *_header;
+    
+}
 
 @end
 
@@ -41,12 +46,64 @@
 	return @"分享平台";
 }
 
+-(void)loadmore
+{
+    
+    
+    NSString *urlString = @"http://humanplatform.sinaapp.com/index.php/Product/ios_index";
+	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	NSURL *url = [NSURL URLWithString:urlString];
+    ASIHTTPRequest *request = [ ASIHTTPRequest requestWithURL :url];
+    
+    //开始同步请求
+    [request startSynchronous];
+    
+    NSError *error = [request error];
+    if(!error){
+        NSString *response = [request responseString];
+        NSString *b = [response substringFromIndex:3];
+        NSLog(b);
+        SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+        //        NSMutableDictionary *dict = [jsonParser objectWithString:b];
+        NSMutableArray *arr=[jsonParser objectWithString:b];
+        self.array=arr;
+    }
+    
+    [self.tableView reloadData];
+    // 结束刷新状态
+    [_header endRefreshing];
+
+}
+-(void)addheader
+{
+    // 防止block循环retain，所以用__unsafe_unretained
+    __unsafe_unretained ShareVC *vc = self;
+    // 3.3行集成下拉刷新控件
+    _header = [MJRefreshHeaderView header];
+    _header.scrollView = self.tableView;
+    _header.delegate = self;
+    
+ 
+
+}
+#pragma mark - 刷新的代理方法---进入下拉刷新\上拉加载更多都有可能调用这个方法
+- (void)refreshViewBeginRefreshing:(MJRefreshBaseView *)refreshView
+{
+    if (refreshView == _header) { // 下拉刷新
+        
+        // 2秒后刷新表格
+        [self performSelector:@selector(loadmore) withObject:nil afterDelay:0.5];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
     { self.edgesForExtendedLayout = UIRectEdgeNone;}
+    
+    [self addheader];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

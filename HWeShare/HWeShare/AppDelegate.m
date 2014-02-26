@@ -50,10 +50,14 @@
     IndexVC *in=[[IndexVC alloc] init];
     UINavigationController *index= [[UINavigationController alloc] initWithRootViewController:in];
     
-    nav.navigationBar.tintColor= [UIColor darkGrayColor];
+    ShareVC *s=[[ShareVC alloc] init];
+    UINavigationController *share= [[UINavigationController alloc] initWithRootViewController:s];
+    
+//    nav.navigationBar.tintColor= [UIColor darkGrayColor];
     hot.navigationBar.tintColor= [UIColor darkGrayColor];
+    
     [_tabBarController setViewControllers:[NSMutableArray arrayWithObjects:
-                                                index,nav,[[ShareVC alloc] init],hot,nil]];
+                                                index,nav,share,hot,nil]];
     // Tab background Image
     [_tabBarController setBackgroundImageName:@"noise-dark-gray.png"];
     [_tabBarController setSelectedBackgroundImageName:@"noise-dark-blue.png"];

@@ -10,7 +10,7 @@
 #import "WXApiObject.h"
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
-@interface DetailVC : UIViewController
+@interface DetailVC : UIViewController<UIAlertViewDelegate>
 
 - (IBAction)gotourl:(id)sender;
 

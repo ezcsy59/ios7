@@ -46,6 +46,8 @@
 		046D86C018796FB20094F214 /* NSMutableDictionaryTaobao.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D86BE18796FB20094F214 /* NSMutableDictionaryTaobao.m */; };
 		047E463C1883CE1500A85527 /* icon_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 047E463B1883CE1500A85527 /* icon_big.png */; };
 		047E463E1883CE2000A85527 /* icon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 047E463D1883CE2000A85527 /* icon_small.png */; };
+		048F517E18B6EE33008DD65E /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F517C18B6EE33008DD65E /* LoginVC.m */; };
+		048F517F18B6EE33008DD65E /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048F517D18B6EE33008DD65E /* LoginVC.xib */; };
 		049268FA187A410000383E0C /* UIViewController+AKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049268F9187A410000383E0C /* UIViewController+AKTabBarController.m */; };
 		049268FC187A466C00383E0C /* sousuo.png in Resources */ = {isa = PBXBuildFile; fileRef = 049268FB187A466A00383E0C /* sousuo.png */; };
 		049268FE187A4A2B00383E0C /* sousuonew.png in Resources */ = {isa = PBXBuildFile; fileRef = 049268FD187A4A2900383E0C /* sousuonew.png */; };
@@ -240,6 +242,9 @@
 		046D86BE18796FB20094F214 /* NSMutableDictionaryTaobao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableDictionaryTaobao.m; sourceTree = "<group>"; };
 		047E463B1883CE1500A85527 /* icon_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_big.png; sourceTree = "<group>"; };
 		047E463D1883CE2000A85527 /* icon_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_small.png; sourceTree = "<group>"; };
+		048F517B18B6EE33008DD65E /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		048F517C18B6EE33008DD65E /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		048F517D18B6EE33008DD65E /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		049268F8187A410000383E0C /* UIViewController+AKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AKTabBarController.h"; sourceTree = "<group>"; };
 		049268F9187A410000383E0C /* UIViewController+AKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AKTabBarController.m"; sourceTree = "<group>"; };
 		049268FB187A466A00383E0C /* sousuo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sousuo.png; sourceTree = "<group>"; };
@@ -660,6 +665,9 @@
 				04A786AB18B45500002A844E /* ShareVC.h */,
 				04A786AC18B45500002A844E /* ShareVC.m */,
 				04A786AD18B45500002A844E /* ShareVC.xib */,
+				048F517B18B6EE33008DD65E /* LoginVC.h */,
+				048F517C18B6EE33008DD65E /* LoginVC.m */,
+				048F517D18B6EE33008DD65E /* LoginVC.xib */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -975,6 +983,7 @@
 				04A865CD1869336100C3194E /* ICN_tab_info_ON.png in Resources */,
 				04A1B4E6188CB17100A122FD /* 304.jpeg in Resources */,
 				04A865CE1869336100C3194E /* ICN_tab_info_ON@2x.png in Resources */,
+				048F517F18B6EE33008DD65E /* LoginVC.xib in Resources */,
 				04A865CF1869336100C3194E /* ICN_tab_info.png in Resources */,
 				04A865D01869336100C3194E /* ICN_tab_info@2x.png in Resources */,
 				04A865D11869336100C3194E /* ICN_tab_search_ON.png in Resources */,
@@ -1040,6 +1049,7 @@
 				04A86627186966F100C3194E /* ASIFormDataRequest.m in Sources */,
 				04A86628186966F100C3194E /* ASIHTTPRequest.m in Sources */,
 				04A86629186966F100C3194E /* ASIInputStream.m in Sources */,
+				048F517E18B6EE33008DD65E /* LoginVC.m in Sources */,
 				04A8662A186966F100C3194E /* ASINetworkQueue.m in Sources */,
 				04A8663518697E9000C3194E /* MJRefreshBaseView.m in Sources */,
 				04AC5F541887D02500F96CCA /* NSURLAdditions.m in Sources */,
