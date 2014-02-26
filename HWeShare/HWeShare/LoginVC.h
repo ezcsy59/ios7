@@ -17,5 +17,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *username;
 @property (strong, nonatomic) IBOutlet UITextField *password;
 @property (strong, nonatomic) IBOutlet UIButton *rebutton;
+- (IBAction)re:(id)sender;
 
 @end

@@ -122,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HWeShare/ShareVC.m"
-            timestampString = "414641534.338704"
+            timestampString = "414641070.325883"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-loadmore"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -137,13 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HWeShare/ShareVC.m"
-            timestampString = "414641070.325883"
+            filePath = "HWeShare/ReVC.m"
+            timestampString = "415074399.005578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-loadmore"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-re:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

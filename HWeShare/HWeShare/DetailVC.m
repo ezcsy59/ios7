@@ -133,6 +133,7 @@
      [request setPostValue:[myDelegate.detail objectForKey:@"sid"] forKey:@"sid"];
      [request setPostValue:[myDelegate.detail objectForKey:@"click_url"] forKey:@"click_url"];
      [request setPostValue:[myDelegate.detail objectForKey:@"seller_name"] forKey:@"seller_name"];
+        [request setPostValue:myDelegate.username forKey:@"provider"];
     //开始同步请求
     [request startSynchronous];
     }else{

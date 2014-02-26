@@ -62,6 +62,9 @@
                     <state key="normal" title="注册">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="re:" destination="-1" eventType="touchUpInside" id="Yh3-aR-kyX"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsa-0a-xL6">
                     <rect key="frame" x="27" y="269" width="259" height="30"/>

@@ -83,6 +83,8 @@
 		04A1B4E6188CB17100A122FD /* 304.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A1B4E5188CB17100A122FD /* 304.jpeg */; };
 		04A1B4E8188CB3AF00A122FD /* 402.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A1B4E7188CB3AF00A122FD /* 402.jpeg */; };
 		04A1B4EA188CB51C00A122FD /* 703.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04A1B4E9188CB51C00A122FD /* 703.jpeg */; };
+		04A42B7418BD806B00C94A8E /* ReVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A42B7218BD806B00C94A8E /* ReVC.m */; };
+		04A42B7518BD806B00C94A8E /* ReVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A42B7318BD806B00C94A8E /* ReVC.xib */; };
 		04A786AE18B45500002A844E /* ShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A786AC18B45500002A844E /* ShareVC.m */; };
 		04A786AF18B45500002A844E /* ShareVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A786AD18B45500002A844E /* ShareVC.xib */; };
 		04A865B51869336100C3194E /* ICN_account_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A865951869334800C3194E /* ICN_account_ON.png */; };
@@ -297,6 +299,9 @@
 		04A1B4E5188CB17100A122FD /* 304.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 304.jpeg; sourceTree = "<group>"; };
 		04A1B4E7188CB3AF00A122FD /* 402.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 402.jpeg; sourceTree = "<group>"; };
 		04A1B4E9188CB51C00A122FD /* 703.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 703.jpeg; sourceTree = "<group>"; };
+		04A42B7118BD806B00C94A8E /* ReVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReVC.h; sourceTree = "<group>"; };
+		04A42B7218BD806B00C94A8E /* ReVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReVC.m; sourceTree = "<group>"; };
+		04A42B7318BD806B00C94A8E /* ReVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReVC.xib; sourceTree = "<group>"; };
 		04A786AB18B45500002A844E /* ShareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareVC.h; sourceTree = "<group>"; };
 		04A786AC18B45500002A844E /* ShareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareVC.m; sourceTree = "<group>"; };
 		04A786AD18B45500002A844E /* ShareVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareVC.xib; sourceTree = "<group>"; };
@@ -668,6 +673,9 @@
 				048F517B18B6EE33008DD65E /* LoginVC.h */,
 				048F517C18B6EE33008DD65E /* LoginVC.m */,
 				048F517D18B6EE33008DD65E /* LoginVC.xib */,
+				04A42B7118BD806B00C94A8E /* ReVC.h */,
+				04A42B7218BD806B00C94A8E /* ReVC.m */,
+				04A42B7318BD806B00C94A8E /* ReVC.xib */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -1003,6 +1011,7 @@
 				046D837C187966CE0094F214 /* CustomCell.xib in Resources */,
 				04A05C761888DAC40081F252 /* 205.jpeg in Resources */,
 				046D837E187966CE0094F214 /* TestViewController.xib in Resources */,
+				04A42B7518BD806B00C94A8E /* ReVC.xib in Resources */,
 				049268FC187A466C00383E0C /* sousuo.png in Resources */,
 				04A05C7E1888DF390081F252 /* 401.jpeg in Resources */,
 				049268FE187A4A2B00383E0C /* sousuonew.png in Resources */,
@@ -1089,6 +1098,7 @@
 				046D86BF18796FB20094F214 /* NSStringEx.m in Sources */,
 				046D86C018796FB20094F214 /* NSMutableDictionaryTaobao.m in Sources */,
 				049268FA187A410000383E0C /* UIViewController+AKTabBarController.m in Sources */,
+				04A42B7418BD806B00C94A8E /* ReVC.m in Sources */,
 				049B650318B2FA0600AFF7C8 /* FMDatabasePool.m in Sources */,
 				0498F82D187A875100AF452A /* FirstViewController.m in Sources */,
 				04AC5F2F188768A200F96CCA /* HotVC.m in Sources */,
