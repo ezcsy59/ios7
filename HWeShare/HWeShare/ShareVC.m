@@ -14,6 +14,8 @@
 #import "SBJSON.h"
 #import "CustomCell.h"
 #import "MJRefresh.h"
+#import "WebVC.h"
+#import "AppDelegate.h"
 @interface ShareVC ()<MJRefreshBaseViewDelegate>
 {
     MJRefreshHeaderView *_header;
@@ -195,6 +197,40 @@
     cell.price.text = pricenew ;
     
     return cell;
+}
+
+
+
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     [detailViewController release];
+     */
+    
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    NSMutableDictionary *temp = [self.array objectAtIndex:indexPath.row];
+    
+    NSURL *url = [NSURL URLWithString:[temp objectForKey:@"click_url" ] ];
+    
+    myDelegate.url=url;
+    
+    WebVC *webvc =[[WebVC alloc]init];
+    [self.navigationController pushViewController:webvc animated:YES];
+    
+    
+    //    myDelegate.detail = [self.array objectAtIndex:indexPath.row];
+    
+    //    DetailVC *de = [[DetailVC alloc] init];
+    //    [self.navigationController pushViewController:de animated:YES];
+    
 }
 
 /*
