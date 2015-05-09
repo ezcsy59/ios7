@@ -15,7 +15,7 @@
 #import "SearchVC.h"
 #import "HotVC.h"
 #import "IndexVC.h"
-#import "ShareVC.h"
+
 #import "WXApi.h"
 @implementation AppDelegate
 
@@ -50,14 +50,10 @@
     IndexVC *in=[[IndexVC alloc] init];
     UINavigationController *index= [[UINavigationController alloc] initWithRootViewController:in];
     
-    ShareVC *s=[[ShareVC alloc] init];
-    UINavigationController *share= [[UINavigationController alloc] initWithRootViewController:s];
-    
-//    nav.navigationBar.tintColor= [UIColor darkGrayColor];
+    nav.navigationBar.tintColor= [UIColor darkGrayColor];
     hot.navigationBar.tintColor= [UIColor darkGrayColor];
-    
     [_tabBarController setViewControllers:[NSMutableArray arrayWithObjects:
-                                                index,nav,share,hot,nil]];
+                                                nav,index,[[FourthViewController alloc] init],hot,nil]];
     // Tab background Image
     [_tabBarController setBackgroundImageName:@"noise-dark-gray.png"];
     [_tabBarController setSelectedBackgroundImageName:@"noise-dark-blue.png"];

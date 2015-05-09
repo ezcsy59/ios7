@@ -10,7 +10,6 @@
 #import "CRTabBarController.h"
 #import "WXApi.h"
 
-
 @class AKTabBarController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,CRTabBarControllerDelegate,WXApiDelegate>
@@ -20,8 +19,6 @@
 @property (nonatomic, strong) AKTabBarController *tabBarController;
 
 @property (nonatomic, retain) NSString  *testsch;
-
-@property (nonatomic, retain) NSString  *username;
 
 @property (nonatomic, retain) NSURL  *url;
 
