@@ -1139,7 +1139,6 @@
 					/Users/mac/Documents/ios7/HWeShare/WeiXinSDK,
 				);
 				OTHER_LDFLAGS = (
-					"-fobjc",
 					"-arc",
 					"-ObjC",
 				);
@@ -1167,7 +1166,6 @@
 					/Users/mac/Documents/ios7/HWeShare/WeiXinSDK,
 				);
 				OTHER_LDFLAGS = (
-					"-fobjc",
 					"-arc",
 					"-ObjC",
 				);
