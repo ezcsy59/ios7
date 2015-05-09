@@ -14,20 +14,12 @@
 #import "FourthViewController.h"
 #import "SearchVC.h"
 #import "HotVC.h"
-#import "IndexVC.h"
 
-#import "WXApi.h"
+#import "IndexVC.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    
-    //向微信注册
-    [WXApi registerApp:@"wxa99c3ebb1dc591e9"];
-    
-    
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 //    self.window.backgroundColor = [UIColor whiteColor];
@@ -62,15 +54,6 @@
     
     [self.window makeKeyAndVisible];
     return YES;
-}
-
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-{
-    return  [WXApi handleOpenURL:url delegate:self];
-}
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-{
-    return  [WXApi handleOpenURL:url delegate:self];
 }
 
 //-(void)setupTabBarController

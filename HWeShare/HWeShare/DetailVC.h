@@ -15,6 +15,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *ti;
 
 @property (strong, nonatomic) IBOutlet UIImageView *image;
-@property (strong, nonatomic) IBOutlet UIButton *lookbutton;
 
 @end
