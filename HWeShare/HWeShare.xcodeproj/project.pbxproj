@@ -60,9 +60,9 @@
 		0498F830187A875100AF452A /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498F82A187A875100AF452A /* FourthViewController.m */; };
 		0498F831187A875100AF452A /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498F82C187A875100AF452A /* ContentViewController.m */; };
 		049B650118B2FA0600AFF7C8 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B64F818B2FA0600AFF7C8 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		049B650218B2FA0600AFF7C8 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B64FA18B2FA0600AFF7C8 /* FMDatabaseAdditions.m */; };
+		049B650218B2FA0600AFF7C8 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B64FA18B2FA0600AFF7C8 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		049B650318B2FA0600AFF7C8 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B64FC18B2FA0600AFF7C8 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		049B650418B2FA0600AFF7C8 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B64FE18B2FA0600AFF7C8 /* FMDatabaseQueue.m */; };
+		049B650418B2FA0600AFF7C8 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B64FE18B2FA0600AFF7C8 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		049B650518B2FA0600AFF7C8 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B650018B2FA0600AFF7C8 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		049B650718B302FE00AFF7C8 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 049B650618B302FE00AFF7C8 /* libsqlite3.0.dylib */; };
 		049D62DF187CE3BE00729266 /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D62DD187CE3BE00729266 /* SearchVC.m */; };
@@ -171,7 +171,14 @@
 		04AC5F581887D02500F96CCA /* UrlImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC5F4F1887D02500F96CCA /* UrlImageButton.m */; };
 		04AC5F591887D02500F96CCA /* UrlImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC5F511887D02500F96CCA /* UrlImageView.m */; };
 		04F87CFE1880FD4E001633E8 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F87CFD1880FD4E001633E8 /* KxMenu.m */; };
+		65058E251AFE21E600CFA5DA /* libWeChatSDK.a in Sources */ = {isa = PBXBuildFile; fileRef = 6540D7CC18B600550091391C /* libWeChatSDK.a */; };
+		65058E261AFE220E00CFA5DA /* WXApi.h in Sources */ = {isa = PBXBuildFile; fileRef = 6540D7CD18B600550091391C /* WXApi.h */; };
+		65058E271AFE220E00CFA5DA /* WXApiObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 6540D7CE18B600550091391C /* WXApiObject.h */; };
 		6540D7CF18B600550091391C /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6540D7CC18B600550091391C /* libWeChatSDK.a */; };
+		657C6D921AFE1D8900ED3B5C /* TestViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 046D8378187966CD0094F214 /* TestViewController.h */; };
+		657C6D931AFE1DBC00ED3B5C /* DetailVC.h in Sources */ = {isa = PBXBuildFile; fileRef = 049D62E1187D225500729266 /* DetailVC.h */; };
+		657C6D941AFE1DBC00ED3B5C /* DetailVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 049D62E3187D225600729266 /* DetailVC.xib */; };
+		657C6D951AFE1DC600ED3B5C /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 0458922518691D3700FC2B10 /* AppDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1046,6 +1053,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65058E261AFE220E00CFA5DA /* WXApi.h in Sources */,
+				65058E271AFE220E00CFA5DA /* WXApiObject.h in Sources */,
+				65058E251AFE21E600CFA5DA /* libWeChatSDK.a in Sources */,
+				657C6D951AFE1DC600ED3B5C /* AppDelegate.h in Sources */,
+				657C6D931AFE1DBC00ED3B5C /* DetailVC.h in Sources */,
+				657C6D941AFE1DBC00ED3B5C /* DetailVC.xib in Sources */,
+				657C6D921AFE1D8900ED3B5C /* TestViewController.h in Sources */,
 				04AB983E1869275100178CEB /* CRTabBarController.m in Sources */,
 				0458922318691D3700FC2B10 /* main.m in Sources */,
 				04AC5F391887CC3500F96CCA /* IndexVC.m in Sources */,
@@ -1198,6 +1212,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: YANWEN CHENG (J28QFMFJ6D)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: YANWEN CHENG (J28QFMFJ6D)";
+				GCC_C_LANGUAGE_STANDARD = gnu89;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HWeShare/HWeShare-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2.2";
@@ -1212,7 +1227,6 @@
 					/Users/human/Documents/ios7/HWeShare/WeiXinSDK,
 				);
 				OTHER_LDFLAGS = (
-					"-fobjc",
 					"-arc",
 					"-ObjC",
 				);
@@ -1227,6 +1241,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: YANWEN CHENG (J28QFMFJ6D)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: YANWEN CHENG (J28QFMFJ6D)";
+				GCC_C_LANGUAGE_STANDARD = gnu89;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HWeShare/HWeShare-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2.2";
@@ -1241,7 +1256,6 @@
 					/Users/human/Documents/ios7/HWeShare/WeiXinSDK,
 				);
 				OTHER_LDFLAGS = (
-					"-fobjc",
 					"-arc",
 					"-ObjC",
 				);
